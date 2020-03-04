@@ -17,12 +17,11 @@ sounds = {
 
 def main():
     try:
-        two_words = input("Enter two sounds>> ")
-        split_words = two_words.split(' ')
+        two_words = input("Enter two sounds>> ").split(" ")
 
-        if split_words[0] and split_words[1] in list(sounds.keys()):
-            print(f"{split_words[0]} is a {sounds.get(split_words[0])}", end=" ")
-            print(f"and {split_words[1]} is a {sounds.get(split_words[1])}")
+        if two_words[0] and two_words[1] in list(sounds.keys()):
+            print(f"{two_words[0]} is a {sounds.get(two_words[0])}", end=" ")
+            print(f"and {two_words[1]} is a {sounds.get(two_words[1])}")
             _string.__doc__
 
         else:
@@ -48,3 +47,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
